@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .all-box{
+            width: 500px;
+            height: 500px;
+            background-color: palevioletred;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .pink{
+            background: pink;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+        .yellow{
+            background-color: yellow;
+            position: relative;
+            top: -200px;
+            z-index: 1;
+        }
+
+        .blue{
+            background: skyblue;
+            position: relative;
+            left: 100px;
+            z-index: 3;
+        }
+        img{
+            width: 100%;
+        }
+        .content-box{
+            position: relative;
+        }
+        .content-img{
+            position: absolute;
+        }
+        .content-text{
+            width: 100%;
+            height: 180px;
+            color: #fff;
+            background: rgba(0,0,0,0.3);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bg-img{
+            width: 320px;
+        }
+        .content-text:hover{
+            background-color: rgba(231,211,22,0.3);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all-box">
+        <div class="box pink">
+            <h1>ONE</h1>
+        </div>
+        <div class="box blue">
+            <h1>TOW</h1>
+        </div>
+        <div class="box yellow">
+            <h1>THREE</h1>
+        </div>
+    </div>
+
+<div class="d-flex">
+    <div class="bg-img">
+        <div class="content-box">
+            <div class="content-img">
+                <img src="pc.jpg" alt="">
+            </div>
+            <div class="content-text">
+                <h1>텍스트</h1>
+            </div>
+        </div>
+    </div>
+    <div class="bg-img">
+        <div class="content-box">
+            <div class="content-img">
+                <img src="pc.jpg" alt="">
+            </div>
+            <div class="content-text">
+                <h1>텍스트</h1>
+            </div>
+        </div>
+    </div>
+    <div class="bg-img">
+        <div class="content-box">
+            <div class="content-img">
+                <img src="pc.jpg" alt="">
+            </div>
+            <div class="content-text">
+                <h1>텍스트</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
